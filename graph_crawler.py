@@ -38,10 +38,10 @@ def limit_handled(func, wait_min):
 # access_token_secret = 'fgt4FnzwRaxUxKOLTxddy8ntxMnLsv0WcI5oxalo9glxl'
 
 
-consumer_key = twitter_accounts['consumer_key']
-consumer_key_secret = twitter_accounts['consumer_key_secret']
-access_token = twitter_accounts['access_token']
-access_token_secret = twitter_accounts['access_token_secret']
+consumer_key = accounts['consumer_key']
+consumer_key_secret = accounts['consumer_key_secret']
+access_token = accounts['access_token']
+access_token_secret = accounts['access_token_secret']
 
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_key_secret)
