@@ -1,6 +1,9 @@
 accounts.py
 twtenv
-temp.txt
+temp/temp.txt
+temp/temp.py
+temp/temp.json
+temp/temp.ipynb
 .vscode/
 
 # Byte-compiled / optimized / DLL files
@@ -227,3 +230,6 @@ modules.xml
 .idea/sonarlint
 
 # End of https://www.toptal.com/developers/gitignore/api/pycharm+all
+temp/.DS_Store
+.DS_Store
+outputs/temp.txt
