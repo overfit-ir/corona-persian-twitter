@@ -1,9 +1,6 @@
 accounts.py
 twtenv
-temp/temp.txt
-temp/temp.py
-temp/temp.json
-temp/temp.ipynb
+outputs/temp/*
 .vscode/
 
 # Byte-compiled / optimized / DLL files
