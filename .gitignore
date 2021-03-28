@@ -1,6 +1,6 @@
 accounts.py
 twtenv
-outputs/temp/*
+data/temp/*
 codes/temp/*
 codes/accounts.py
 .vscode/
