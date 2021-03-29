@@ -34,27 +34,15 @@ class Tweet(BaseModel):
     likes_count = IntegerField()
     retweets_count = IntegerField()
     qoutes_count = IntegerField()
-    reply_to = ForeignKeyField('self', backref='replies')
-    list of replies =  [json or table]
     text = TextField(null=True) #with hashtag
     hashtags = [list of TextField]
     media_src = CharField(max_length=511, default= None)
     datetime = TimestampField()
     # link = CharField(max_length=511) 
     # media_type = CharField()
-    # # location = CharField(null=True)
-    # #owner = ForeignKeyField(User,  backref="posts")
-    # # owner_instagram_id = BigIntegerField()
-    # shortcode = CharField(unique=True)
-    
-    # instagram_created_time = TimestampField()
-    
-    #carousel media src type width height
-    media_type_name = CharField()
-    media_type = CharField()
-
     def getlink():
         pass
+
 
 
     @classmethod
@@ -85,9 +73,6 @@ class Reply(Tweet):
 #     text = TextField()
 #     user = ForeignKeyField(User, backref='replies')
 #     tweet = ForeignKeyField(Tweet, backref='replies')
-
-class Qoute(Tweet):
-    parent_tweet = ForeignKeyField(Tweet, backref='replies')
 
 class Like(BaseModel):
     liker = ForeignKeyField(User, backref='likes')
