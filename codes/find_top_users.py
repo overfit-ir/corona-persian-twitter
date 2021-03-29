@@ -1,5 +1,5 @@
 import tweepy
-import accounts
+from inputs.twitter_accounts import twitter_accounts
 
 twitter_accounts = accounts.twitter_accounts
 
@@ -35,3 +35,4 @@ while True:
         break
 
 print(sorted(users_seen_count.items(), key=lambda item: item[1])[-10:])
+
